@@ -37,32 +37,28 @@ const CandidateCard = ({ username }: CandidateProps) => {
 			<h1>{loadedUser.name ? loadedUser.name : loadedUser.login}</h1>
 
 
-			<h2>Location: </h2>
 			{loadedUser.location ? (
-				<p>{loadedUser.location}</p>
+				<p><strong>Location:</strong> {loadedUser.location}</p>
 			) : (
-				<p>No Location Found to render</p>
+				<p><strong>Location:</strong> No Location Found to render</p>
 			)}
 
-			<h2>Email: </h2>
 			{loadedUser.email ? (
-				<p>{loadedUser.email}</p>
+				<p><strong>Email:</strong> {loadedUser.email}</p>
 			) : (
-				<p>No Email Found to render</p>
+				<p><strong>Email:</strong> No Email Found to render</p>
 			)}
 
-			<h2>Company: </h2>
 			{loadedUser.company ? (
-				<p>{loadedUser.company}</p>
+				<p><strong>Company:</strong> {loadedUser.company}</p>
 			) : (
-				<p>No Company Found to render</p>
+				<p><strong>Company:</strong> No Company Found to render</p>
 			)}
 
-			<h2>Bio: </h2>
 			{loadedUser.bio ? (
-				<p>{loadedUser.bio}</p>
+				<p><strong>Bio:</strong> {loadedUser.bio}</p>
 			) : (
-				<p>No Bio Found to render</p>
+				<p><strong>Bio:</strong> No Bio Found to render</p>
 			)}
 		</div>
 	);
